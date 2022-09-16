@@ -990,7 +990,7 @@ namespace OpenRA.Mods.Common.Server
 				}
 
 				// Handicaps may be set between 0 - 95% in steps of 5%
-				var options = Enumerable.Range(0, 20).Select(i => 5 * i);
+				var options = Enumerable.Range(0, 100).Select(i => 1 * i);
 				if (!options.Contains(handicap))
 				{
 					Log.Write("server", "Invalid handicap: {0}", s);
